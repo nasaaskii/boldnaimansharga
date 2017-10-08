@@ -1,0 +1,71 @@
+<!--
+  Generated template for the PartnerPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>
+            Валютын ханш
+        </ion-title>
+
+        <ion-buttons end>
+            <button ion-fab mini [navPush]="Login" color="danger">
+                <ion-icon ios="ios-add-circle" md="md-add-circle"></ion-icon>
+            </button>
+        </ion-buttons>
+
+    </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+    <ion-item>
+        <ion-row>
+            <ion-col col-5>
+                <b>{{nowdate | date:'yyyy-MM-dd'}}</b>
+            </ion-col>
+            <ion-col align-self-center col-2>
+                <span style="float:center;">Албан</span>
+            </ion-col>
+            <ion-col align-self-center col-2>
+                <b style="float:center;font-weight:bold;">Авах</b>
+            </ion-col>
+            <ion-col align-self-center col-2>
+                <b style="float:center;font-weight:bold;">Зарах</b>
+            </ion-col>
+        </ion-row>
+    </ion-item>
+    <ion-list>
+        <ion-item-sliding *ngFor="let currency of currencyList">
+            <ion-item>
+                <ion-row>
+                    <ion-col col-5>
+                        <ion-img src="{{currency.pic}}" style="float:center;width:50px;height:50px;"> </ion-img>
+                        <b style="text-align: center;">{{currency.name}}</b>
+                    </ion-col>
+                    <ion-col  align-self-center col-2>
+                      <!--  <span style="float:center;">{{currency.mongolbank}}</span> -->
+                        <span style="float:center;">2100</span>
+                    </ion-col>
+                    <ion-col align-self-center col-2>
+                        <b style="float:center;font-weight:bold;">{{currency.rate_buy}}</b>
+                    </ion-col>
+                    <ion-col align-self-center col-2>
+                        <b style="float:center;font-weight:bold;">{{currency.rate_sell}}</b>
+                    </ion-col>
+                </ion-row>
+            </ion-item>
+        </ion-item-sliding>
+    </ion-list>
+
+
+    <h4>Валют арилжааны хэлцлийн ханш:</h4><br/>
+    <span>
+    	Харилцагч таны валютын арилжааны дүн 20 сая төгрөг ба түүнтэй тэнцэх гадаад валютаас их хэмжээтэй
+    	тохиолдолд та манай 99090212 утсаар холбогдож валют арилжааны гүйлгээ хийх боломжтой.
+    </span><br/><br/>
+    <span>
+    	Тухайн өдрийн валют арилжааны хэлбэлзлийг урьдчилан мэдээллэх боломжгүй болно.
+    </span>
+</ion-content>

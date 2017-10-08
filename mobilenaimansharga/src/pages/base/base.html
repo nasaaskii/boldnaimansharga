@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-navbar hideBackButton="true" color="primary" >
+        <img height="60" src="http://localhost:8000/uploads/currency/baselogo.png"> 
+        <ion-title>  
+            НАЙМАН ШАРГА
+        </ion-title>
+        <ion-buttons end>
+            <button ion-fab mini [navPush]="Login" color="danger">
+                <ion-icon ios="ios-add-circle" md="md-add-circle"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content padding style="background-color:#E6E6E6;">
+    <div class="eag-home-container-flex">
+        <div class="eag-home-container">
+         <div class ="row">
+             <div class="col"><button class="button button-stable button-clear eag-home-button" [navPush]="homePage"><img src="http://localhost:8000/uploads/currency/rate.png" ></button><p class="eag-home-label">ХАНШ</p></div>
+            <div class="col"><button class="button button-stable button-clear eag-home-button" [navPush]="calculatePage"><img src="http://localhost:8000/uploads/currency/calc.png" ></button><p class="eag-home-label">ТООЦООЛОЛ</p></div>
+            </div>
+        <div class ="row">
+            <div class="col"><button class="button button-stable button-clear eag-home-button" [navPush]="contactPage"><img src="http://localhost:8000/uploads/currency/contact.png" ></button><p class="eag-home-label">ХОЛБОО БАРИХ</p></div>
+            <div class="col"></div> 
+        </div>
+        </div>
+    </div>
+</ion-content>

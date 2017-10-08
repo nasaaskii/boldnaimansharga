@@ -1,0 +1,56 @@
+
+    // The path for our ionicons font files, relative to the built CSS in www/css
+    $ionicons-font-path: "../lib/ionic/fonts" !default;
+
+    // Include all of Ionic
+    
+
+    /* CUSTOM TYLES */
+
+    .eag-home-button {
+      min-height: 200px;
+
+    }
+    .eag-home-button img {
+      width:70%;
+
+    }
+
+    .eag-home-icon {
+        width: 148px;
+    }
+
+    .eag-home-align{
+        text-align: center;
+    }
+
+    .eag-home-container-flex {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;  
+    }
+
+    .eag-home-container {
+    //    width: 326px;
+    //    height: 555px;
+        padding: 5px;
+        margin: auto;
+        transform: translateY(5%);
+    }
+
+    .eag-home-label {
+      padding: 0px;
+      margin: 0px;
+      text-align: center;
+      transform: translateY(-165%);
+    }
+
+    .eag-no-margin {
+      margin: 0 !important;
+    }
+
+    .eag-less-padding {
+      padding: 24px !important;
+    }
